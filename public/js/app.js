@@ -3,7 +3,6 @@
 // home.addEventListener('click',()=>{
 // h1.innerHTML='You are changed by JS'
 // 
-console.log("Client Side JAvascript");
 // async function fetchData(){
 //     const response=await fetch('http://puzzle.mead.io/puzzle')
 //     // console.log(await response.json());
