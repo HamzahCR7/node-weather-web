@@ -50,13 +50,14 @@ app.get('/help', (req, res) => {
         title: 'Help Page',
         desc: 'Created by dynamic template using hbs'
 
+
     })
 })
 
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return  res.send({
-            error:"Unable to Find Location,Try with another location"
+            error:"Unable to Find Location,Try with another location(s)"
         })
     }
 
