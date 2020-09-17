@@ -40,7 +40,7 @@ a {
 .portrait {
     width: 250px;
 }
-.inner{
+.inners{
     margin-top: 20px;
     padding-top: 30px;
     font-size: 1.6rem;
@@ -62,4 +62,23 @@ button{
 button:hover{
     color: #333333;
     background: #eeeeee;
+}
+span{
+    font-size: 1.2rem;
+    padding: 20px;
+}
+.fa-map-marker{
+color: rgba(255, 0, 157, 0.801);
+}
+.fa-cloud{
+    color:skyblue;
+}
+.fa-burn{
+    color:blueviolet
+}
+.fa-wind{
+    color: #cccccc;
+}
+.icons{
+    padding-top: 50px;
 }

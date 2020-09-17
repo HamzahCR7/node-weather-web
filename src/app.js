@@ -81,8 +81,11 @@ app.get('/weather', (req, res) => {
              place:data.placeName,
              latitude:data.latitude,
              longitude:data.longitude,
-             forecast:forecastdata,
+             forecast:forecastdata.temp,
+             percipation:forecastdata.preci,
+             wind:forecastdata.wind,
              address:req.query.address.toUpperCase(),
+
              
 
          })

@@ -30,6 +30,10 @@ const weatherForm=document.querySelector('form')
 const search=document.querySelector('input')
 const messageOne=document.getElementById('message-1')
 const messageTwo=document.getElementById('message-2')
+const messageThree=document.getElementById('message-3')
+
+const messageFour=document.getElementById('message-4')
+
 
 // messageOne.textContent="Hello"
 weatherForm.addEventListener('submit',(e)=>{
@@ -38,6 +42,9 @@ weatherForm.addEventListener('submit',(e)=>{
     messageOne.textContent="Loading.."
   
     messageTwo.textContent=""
+    messageThree.textContent=""
+    messageFour.textContent=""
+
 
 
     async function fetchWeather() {
@@ -54,6 +61,8 @@ weatherForm.addEventListener('submit',(e)=>{
     // console.log(data.forecast);
     messageOne.textContent=data.place
     messageTwo.textContent=data.forecast
+    messageThree.textContent=data.percipation
+    messageFour.textContent=data.wind
    
     
     
