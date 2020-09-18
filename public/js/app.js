@@ -33,17 +33,25 @@ const messageTwo=document.getElementById('message-2')
 const messageThree=document.getElementById('message-3')
 
 const messageFour=document.getElementById('message-4')
+const messageFive=document.getElementById('message-5')
+const lodaing=document.getElementById('loading')
+const message6=document.getElementById('message-6')
+
+
 
 
 // messageOne.textContent="Hello"
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault()
     const location=search.value
-    messageOne.textContent="Loading.."
+    lodaing.textContent="Loading..."
+    messageOne.textContent=""
   
     messageTwo.textContent=""
     messageThree.textContent=""
     messageFour.textContent=""
+    messageFive.textContent=""
+    message6.textContent=""
 
 
 
@@ -55,14 +63,20 @@ weatherForm.addEventListener('submit',(e)=>{
     // console.log("Current Place: "+data.location.name+" "+data.current.temperature+"degree");
 
     if(data.error){
+        lodaing.textContent=""
         return messageOne.textContent=data.error
     }
     // console.log(data.place);
     // console.log(data.forecast);
+    lodaing.textContent=""
     messageOne.textContent=data.place
     messageTwo.textContent=data.forecast
     messageThree.textContent=data.percipation
     messageFour.textContent=data.wind
+    messageFive.textContent=data.time
+    message6.textContent=data.humid+" Humidity"
+
+
    
     
     

@@ -17,7 +17,7 @@ body {
 footer {
     color: #888888;
     border-top: 1px solid #eeeeee;
-    margin-top: 360px;
+    margin-top: 250px;
     padding: 16px 0;
 }
 
@@ -80,5 +80,5 @@ color: rgba(255, 0, 157, 0.801);
     color: #cccccc;
 }
 .icons{
-    padding-top: 50px;
+    padding-top: 25px;
 }
