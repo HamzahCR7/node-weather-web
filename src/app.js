@@ -42,7 +42,7 @@ app.get('/product', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Page',
-        desc: 'Created by dynamic template using hbs'
+        desc: 'Created by Hamzah Aslam using the json data from webstack api and mapbox api'
 
     })
 })
