@@ -15,9 +15,12 @@ const forecast = (longitude, latitude, callback) => {
             // callback(undefined, ' It is currently ' + response.body.current.temperature + ' degress out. There is ' + response.body.current.weather_descriptions[0] + ' weather.It is likely ' + response.body.current.precip * 100 + '% precipatation.Wind Speed is ' + response.body.current.wind_speed)
    
         callback(undefined,{
+            time:response.body.location.localtime,
             temp:response.body.current.temperature+" degree",
            preci: response.body.current.precip*10+"% percipitation",
-           wind:response.body.current.wind_speed+" km/h"
+           wind:response.body.current.wind_speed+" km/h",
+           humid:response.body.current.humidity
+       
 
         })
         

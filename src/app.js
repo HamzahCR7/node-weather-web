@@ -78,13 +78,15 @@ app.get('/weather', (req, res) => {
             // console.log('Place: '+data.placeName)
             // console.log(forecastdata)
          res.send({
+             time:forecastdata.time,
              place:data.placeName,
              latitude:data.latitude,
              longitude:data.longitude,
              forecast:forecastdata.temp,
              percipation:forecastdata.preci,
              wind:forecastdata.wind,
-             address:req.query.address.toUpperCase(),
+             humid:forecastdata.humid,
+              address:req.query.address.toUpperCase(),
 
              
 
